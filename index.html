@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="login-section">
+      <div class="login-container">
+        <div class="login-illustration">
+          <img src="Login.svg" alt="login image" />
+        </div>
+        <div class="login-form">
+          <h2 class="title">Login</h2>
+          <!-- <form onsubmit="handleLogin(event)" id="sign-in-form"> -->
+          <form id="sign-in-form">
+            <label class="login-label">Email</label>
+            <input
+              type="text"
+              id="inputEmail"
+              class="login-input"
+              placeholder="Enter your email"
+            />
+            <span id="emailError" class="error-message"></span>
+
+            <label class="login-label">Password</label>
+            <input
+              type="password"
+              id="inputPassword"
+              class="login-input"
+              placeholder="Enter your password"
+            />
+            <span id="passwordError" class="error-message"></span>
+
+            <div class="remember-row">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember Me</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+            <p class="signup-text">
+              Don't have an account?
+              <a href="sign up/sign-up.html">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
+  </body>
+</html>

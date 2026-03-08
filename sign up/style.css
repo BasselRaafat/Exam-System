@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  color: #0f172a;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  /* flex-basis: 500px; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 24px 40px -8px rgba(15, 23, 42, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 5%;
+  /* height: 90vh; */
+  background-color: #ffffff;
+}
+
+.card-title {
+  color: #0f172a;
+  margin-bottom: 10%;
+}
+
+.image-block {
+  background-image: url("assetes/signup.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  /* height: 100vh; */
+  border-radius: 20px 0 0 20px;
+}
+
+.form-group {
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form-label {
+  color: #334155;
+  margin-bottom: 3%;
+  font-size: 18px;
+}
+
+.form-input {
+  font-size: 16px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px;
+  color: #0f172a;
+  transition: 0.3s;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+.error-msg {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #ef4444;
+  display: none;
+}
+
+.btn-primary {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    #1e3a8a 0%,
+    #2563eb 50%,
+    #3b82f6 100%
+  );
+  color: #ffffff;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.25);
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 18px 32px rgba(37, 99, 235, 0.35);
+  transform: translateY(-2px);
+}
+
+.login-text {
+  text-align: left;
+  font-size: 18px;
+  color: #334155;
+  margin-top: 3%;
+}
+
+.login-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.display {
+  display: block;
+}

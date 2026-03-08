@@ -1,0 +1,129 @@
+body {
+  background: #f1f5f9;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.result-card {
+  padding: 2rem;
+}
+
+.header {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  /* margin: 18px 0; */
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.result-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container-left,
+.card-result-right {
+  background: #ffffff;
+  margin: 5%;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  /* height: 40vh; */
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e2e8f0;
+}
+
+h1 {
+  font-size: 22px;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+#scoreText {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #334155;
+}
+
+.btn {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  width: fit-content;
+  margin: auto;
+  display: block;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+#percentCircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px auto;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f172a;
+  position: relative;
+
+  background: conic-gradient(#2563eb calc(var(--p) * 1%), #e2e8f0 0);
+}
+
+#percentCircle::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.correct,
+.incorrect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.correct {
+  background: #e6f4ea;
+  color: #0f5132;
+  border-color: #a3e4c2;
+}
+
+.incorrect {
+  background: #fdecea;
+  color: #b02a37;
+  border-color: #f5b5b5;
+}

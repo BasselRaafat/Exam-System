@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="exam.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="question-part">
+        <div class="question-header">
+          <h3 class="question"></h3>
+          <button class="flag-btn">
+            <i class="fa-regular fa-flag"></i>
+          </button>
+        </div>
+
+        <div class="answers">
+          <ul></ul>
+        </div>
+
+        <div class="navigation">
+          <button id="prevBtn" class="nav-btn">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+          </button>
+          <button id="nextBtn" class="nav-btn">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+          </button>
+          <div class="submit-container">
+            <button id="submitBtn">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mark-part">
+        <div id="timer"></div>
+
+        <div class="marked-question">
+          <h3 class="mark-title">Marked question:</h3>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="exam.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What does LAN stand for?",
+    "answers": [
+      { "text": "Large Area Network", "isCorrect": false },
+      { "text": "Light Access Node", "isCorrect": false },
+      { "text": "Local Area Network", "isCorrect": true },
+      { "text": "Limited Area Network", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which device is used to connect multiple computers in a LAN?",
+    "answers": [
+      { "text": "Switch", "isCorrect": true },
+      { "text": "Router", "isCorrect": false },
+      { "text": "Repeater", "isCorrect": false },
+      { "text": "Firewall", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the main purpose of a router?",
+    "answers": [
+      { "text": "To connect devices in the same network", "isCorrect": false },
+      { "text": "To store data", "isCorrect": false },
+      { "text": "To connect different networks", "isCorrect": true },
+      { "text": "To filter viruses", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which protocol is used to send emails?",
+    "answers": [
+      { "text": "HTTP", "isCorrect": false },
+      { "text": "SMTP", "isCorrect": true },
+      { "text": "FTP", "isCorrect": false },
+      { "text": "SNMP", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the default port number for HTTP?",
+    "answers": [
+      { "text": "25", "isCorrect": false },
+      { "text": "443", "isCorrect": false },
+      { "text": "21", "isCorrect": false },
+      { "text": "80", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "Which layer of the OSI model does IP belong to?",
+    "answers": [
+      { "text": "Network layer", "isCorrect": true },
+      { "text": "Transport layer", "isCorrect": false },
+      { "text": "Data link layer", "isCorrect": false },
+      { "text": "Physical layer", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What does DNS do in a network?",
+    "answers": [
+      { "text": "Translates IP addresses to domain names", "isCorrect": false },
+      { "text": "Encrypts web traffic", "isCorrect": false },
+      { "text": "Translates domain names to IP addresses", "isCorrect": true },
+      { "text": "Manages emails", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which protocol is secure version of HTTP?",
+    "answers": [
+      { "text": "SHTTP", "isCorrect": false },
+      { "text": "SSL", "isCorrect": false },
+      { "text": "SSH", "isCorrect": false },
+      { "text": "HTTPS", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "What is the function of a firewall?",
+    "answers": [
+      { "text": "To store website data", "isCorrect": false },
+      { "text": "To assign IP addresses", "isCorrect": false },
+      { "text": "To block unauthorized access", "isCorrect": true },
+      { "text": "To compress data", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which layer of the OSI model ensures reliable data transfer?",
+    "answers": [
+      { "text": "Transport layer", "isCorrect": true },
+      { "text": "Network layer", "isCorrect": false },
+      { "text": "Session layer", "isCorrect": false },
+      { "text": "Presentation layer", "isCorrect": false }
+    ]
+  }
+]

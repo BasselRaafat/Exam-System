@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Result</title>
+    <link rel="stylesheet" href="result.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-header">
+        <h1>Examination Results</h1>
+        <p>Academic Assessment</p>
+      </div>
+    </header>
+
+    <div class="result-card">
+      <div class="card">
+        <div class="exam-info">
+          <div>
+            <h2 id="examTitle"></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-body">
+        <div class="result-container-left">
+          <h1>Quiz Result</h1>
+          <p id="scoreText"></p>
+
+          <div id="percentCircle"></div>
+        </div>
+
+        <section class="card-result-right">
+          <h3>Performance Breakdown</h3>
+
+          <p class="row correct">
+            Correct Answers <span id="correctVal">0</span>
+          </p>
+          <p class="row incorrect">
+            Incorrect Answers <span id="incorrectVal">0</span>
+          </p>
+        </section>
+
+      </div>
+        <button class="btn" onclick="window.location.href= '../index.html' ">Go to Log in</button>
+    </div>
+    <script src="result.js"></script>
+  </body>
+</html>

@@ -1,5 +1,4 @@
 const signUpForm = document.getElementById("sign-up-form");
-console.log(signUpForm);
 
 signUpForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -17,7 +16,7 @@ signUpForm.addEventListener("submit", (e) => {
 
   document
     .querySelectorAll(".error-msg")
-    .forEach((element) => (element.style.dispaly = "none"));
+    .forEach((element) => (element.classList.remove("display")));
 
   const nameRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const emailRegex = /^[A-Za-z]{2,20}$/;
@@ -27,34 +26,34 @@ signUpForm.addEventListener("submit", (e) => {
     firstName.value.trim() === "" &&
     !nameRegex.test(firstName.value.trim())
   ) {
-    firstNameError.style.display = "block";
+    firstNameError.classList.add("display")
     isValid = false;
   }
   if (lastName.value.trim() === "" && !nameRegex.test(lastName.value.trim())) {
-    lastNameError.style.display = "block";
+    lastNameError.classList.add("display")
     isValid = false;
   }
   if (email.value.trim() === "" && !emailRegex.test(email.value.trim())) {
-    emailError.style.display = "block";
+    emailError.classList.add("display")
     isValid = false;
   }
   if (
     password.value.trim() === "" &&
     !passwordRegx.test(password.value.trim())
   ) {
-    passwordError.style.display = "block";
+    passwordError.classList.add("display")
     isValid = false;
   }
   if (confirmPassword.value.trim() === "") {
-    confirmPasswordError.style.display = "block";
+    confirmPasswordError.classList.add("display")
     isValid = false;
   } else if (password.value.trim() != confirmPassword.value.trim()) {
     confirmPasswordError.textContent =
       "Passwrod and Confirm Password dosn't match";
-    confirmPasswordError.style.display = "block";
+    confirmPasswordError.classList.add("display")
     isValid = false;
   } else {
-    confirmPasswordError.style.display = "none";
+    confirmPasswordError.classList.remove("display")
     confirmPasswordError.textContent = "This field is requeired";
   }
   if (!isValid) return;
